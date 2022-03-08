@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KNN Algorithm</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="js/knear.js"></script>
+    <script defer src="js/app.js" type="module"></script>
+</head>
+
+<body>
+    <h1>KNN algoritme</h1>
+    <div id="container">
+        <canvas id="output" ></canvas>
+        <video id="video" playsinline ></video>
+    </div>
+
+    <label>It's a 
+    <input type="text" name="label" id="label"/>
+  </label>
+
+  <button id="train">Train</button>
+  <button id="classify">Classify</button>
+
+  <h2>Here is my guess</h2>
+  <div id="array">Wait...</div>
+
+    <!-- Require the peer dependencies of handpose. -->
+    <script src="https://unpkg.com/@tensorflow/tfjs-core@2.1.0/dist/tf-core.js"></script>
+    <script src="https://unpkg.com/@tensorflow/tfjs-converter@2.1.0/dist/tf-converter.js"></script>
+  
+    <!-- You must explicitly require a TF.js backend if you're not using the tfs union bundle. -->
+    <script src="https://unpkg.com/@tensorflow/tfjs-backend-webgl@2.1.0/dist/tf-backend-webgl.js"></script>
+  
+    <script src="https://unpkg.com/@tensorflow-models/handpose@0.0.6/dist/handpose.js"></script>
+    
+</body>
+
+</html>
